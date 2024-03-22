@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/style_1"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_sher_nomi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/edt_style_1"
+        android:hint="She'rning nomi..."
+        android:fontFamily="@font/my_font_1"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="#FCFBFB"
+        android:textSize="@dimen/_15ssp" />
+
+    <EditText
+        android:id="@+id/edt_sher_matni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/edt_style_1"
+        android:hint="She'rning matni..."
+        android:fontFamily="@font/my_font_1"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="#FCFBFB"
+        android:textSize="@dimen/_15ssp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:backgroundTint="#2FAD64"
+        android:fontFamily="@font/my_font_1"
+        android:text="Saqlash"
+        android:textColor="#DFFFED"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="normal" />
+
+</LinearLayout>

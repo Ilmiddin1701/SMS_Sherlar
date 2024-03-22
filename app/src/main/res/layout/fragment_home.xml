@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="SMS\nSHE'RLAR"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="#F8C500"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#F8C500"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/_15sdp">
+
+                    <ImageView
+                        android:id="@+id/ic_yangilar"
+                        android:layout_width="@dimen/_19sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/ic_yangiliklar" />
+
+                    <TextView
+                        android:id="@+id/tv_yangilar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toEndOf="@id/ic_yangilar"
+                        android:text="Yangilar"
+                        android:textColor="#B99303"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/yCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_yangilar"
+                        android:layout_alignLeft="@id/tv_yangilar"
+                        android:text="122"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/_21ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_yangilar"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toEndOf="@id/yCounter"
+                        android:text="ta"
+                        android:textColor="#B99303"
+                        android:textSize="@dimen/_21ssp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_new"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_84sdp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="@dimen/_35sdp"
+                android:outlineSpotShadowColor="#F8C500"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="NEW"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="#EA1655"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#EA1655"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/_15sdp">
+
+                    <ImageView
+                        android:id="@+id/ic_like1"
+                        android:layout_width="@dimen/_19sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/ic_like1" />
+
+                    <TextView
+                        android:id="@+id/tv_saqlanganlar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toEndOf="@id/ic_like1"
+                        android:text="Saqlanganlar"
+                        android:textColor="#FFA6B6"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/sCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_saqlanganlar"
+                        android:layout_alignLeft="@id/tv_saqlanganlar"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_21ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_saqlanganlar"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toEndOf="@id/sCounter"
+                        android:text="ta"
+                        android:textColor="#FFA6B6"
+                        android:textSize="@dimen/_21ssp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_like"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_84sdp"
+                android:layout_marginEnd="@dimen/_67sdp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="@dimen/_35sdp"
+                android:outlineSpotShadowColor="#EA1655"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="LIKE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:backgroundTint="#F7F7F7"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@id/card5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/card4"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_sevgi_sherlari" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sevgi she'rlari"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:backgroundTint="#F7F7F7"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@id/card6"
+            app:layout_constraintLeft_toRightOf="@id/card3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_soginch_armon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sog'inch armon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:backgroundTint="#F7F7F7"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@id/card7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/card6"
+            app:layout_constraintTop_toBottomOf="@id/card3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_tabrik_sherlari" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tabrik she'rlari"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:backgroundTint="#F7F7F7"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@id/card8"
+            app:layout_constraintLeft_toRightOf="@id/card5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_ota_ona_haqida" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ota-ona haqida"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card7"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:backgroundTint="#F7F7F7"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/card8"
+            app:layout_constraintTop_toBottomOf="@id/card5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_dostlik_sherlari" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do'stlik she'rlari"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card8"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:backgroundTint="#F7F7F7"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/card7"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_hazil_sherlar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hazil she'rlar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
